@@ -23,7 +23,7 @@ public class Game {
     Random rand = new Random();
 
     //Call method nextInt and pass in upper range (exclusive)
-    int number = rand.nextInt(10); // 101 to be inclusive //bound is automatically created by VSCode
+    int number = rand.nextInt(101); // 101 to be inclusive //bound is automatically created by VSCode
     System.out.println("Try to guess the number!");
 
     int guessCounter = 1;
@@ -70,7 +70,7 @@ public class Game {
           if (playAgain == 0) {
             stillPlay = false;
           } else if (playAgain == 1) {
-            number = rand.nextInt(10);
+            number = rand.nextInt(101);
             guess = -1;
           } else {
             System.out.println("Please enter 1 to play again, or 0 to quit");
@@ -82,19 +82,6 @@ public class Game {
           System.out.println(invalidInput + " is invalid. Please enter a number(0 or 1)");
           }
       }
-
-      // System.out.println("Play again: " + playAgain);
-
-      // if (playAgain == 0) {
-      //   stillPlay = false;
-      // } else if (playAgain == 1) {
-      //   number = rand.nextInt(10);
-      //   guess = -1;
-      // } else {
-      //   System.out.println("Please enter 1 to play again, or 0 to quit");
-      //   playAgain = input.nextInt();
-      // }
-
     }
     System.out.println("Thanks for playing! Have a nice day");
   }
